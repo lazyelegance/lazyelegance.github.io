@@ -7,5 +7,9 @@ entries:
         url: https://github.com/lazyelegance
       - title: linkedin
         url: https://www.linkedin.com/in/ezrabathini/
-  - title: posts
+  - title: reading list
+    url: /books
+  - title: now
+    url: /now
+  - title: notes
     post_list: true

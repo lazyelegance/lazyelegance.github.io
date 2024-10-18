@@ -1,0 +1,89 @@
+{%- if include.year_finished -%}
+{%- assign posts = site.books | where: "year_finished", include.year_finished -%}
+{%- if include.show_reading and include.show_reading == true -%}
+{%- assign reading_posts = site.books | where: "read_status", "Reading" -%}
+{%- assign posts = posts | concat: reading_posts -%}
+{%- endif -%}
+{%- assign year_list = true -%}
+{%- elsif include.series -%}
+{%- assign posts = site.books | where: "series", include.series -%}
+{%- assign series_list = true -%}
+{%- else -%}
+{%- assign posts = site.books -%}
+{%- assign year_list = false -%}
+{%- endif -%}
+
+
+{%- if include.limit and posts.size > include.limit -%}
+{%- assign limit_exceeded = true -%}
+{%- else -%}
+{%- assign limit_exceeded = false -%}
+{%- endif -%}
+
+
+{%- if posts.size > 0 -%}
+<ul>
+    {%- assign grouped_posts = posts | group_by: "read_status" -%}
+    {%- assign sorted_groups = grouped_posts | sort: "name" -%}
+    {%- assign reading_group = sorted_groups | where: "name", "Reading" -%}
+    {%- assign read_group = sorted_groups | where: "name", "Read" -%}
+    {%- assign other_groups = sorted_groups | where_exp: "group", "group.name != 'Reading' and group.name != 'Read'" -%}
+
+    {%- for group in reading_group -%}
+    <li>
+        <h3>{{ group.name }}</h3> <!-- Display read_status as heading -->
+        <ul>
+            {%- for post in group.items limit: include.limit -%}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+                <span>- {{post.author | downcase}}</span>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </li>
+    {%- endfor -%}
+
+    {%- if read_group.size > 0 -%}
+    <li>
+        <h3>Read</h3>
+        {%- assign read_posts = read_group[0].items -%}
+        {%- assign grouped_by_year = read_posts | group_by: "year_finished" -%}
+        {%- assign sorted_years = grouped_by_year | sort: "name" | reverse -%}
+
+        {%- for year_group in sorted_years -%}
+        {%- if year_list or series_list -%}
+        <!-- <h5>{{ year_group.name }}</h5> -->
+        {%- else -%}
+        <h5><a href="{{ site.baseurl }}/books/year/{{ year_group.name }}">{{ year_group.name }}</a></h5>
+        {%- endif -%}
+        <ul>
+            {%- for post in year_group.items limit: include.limit -%}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+                <span>- {{post.author | downcase}}</span>
+            </li>
+            {%- endfor -%}
+        </ul>
+        {%- endfor -%}
+    </li>
+    {%- endif -%}
+
+    {%- for group in other_groups -%}
+    <li>
+        <h3>{{ group.name }}</h3>
+        <ul>
+            {%- for post in group.items limit: include.limit -%}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+                <span>- {{post.author | downcase}}</span>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </li>
+    {%- endfor -%}
+
+    {%- if include.show_more and limit_exceeded -%}
+    <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
+    {%- endif -%}
+</ul>
+{%- endif -%}

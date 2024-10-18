@@ -18,12 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: lazyelegance
+title: Ezra's Notes
+author: Ezra Bathini
 email: lazyelegance@ezrabathini.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ on software development, system design, and other things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  lazyelegance
@@ -35,10 +34,30 @@ plugins:
 
 theme_config:
   appearance: "auto"
+  date_format: "%b %d, %Y"
+  
 
+collections:
+  books:
+    output: true
+  series:
+    output: true
+    permalink: /books/series/:title
+  notes:
+    output: true
+  year:
+    output: true
+    permalink: /books/year/:title
+
+collections_dir: _collections
 
 sass:
   style: compressed
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.

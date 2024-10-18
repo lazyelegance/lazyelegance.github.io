@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{%-include back_link.html-%}
+<a href="{{ " /books" | relative_url }}">.</a>
+<article>
+    <p class="post-meta">
+        <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+    </p>
+
+    <h1>{{ page.title }}</h1>
+    <h3>{{ page.author }}</h3>
+    <mark>{{ page.read_status }}</mark>
+    {% if page.is_audiobook %}
+    <span>- 🎧</span>
+    {% endif %}
+    {% if page.series != null %}
+    <h3><a href="{{ site.baseurl }}/books/series/{{ page.series_slug }}">{{ page.series }}</a> - {{
+        page.series_number }}
+    </h3>
+    {% endif %}
+    {{ content | markdownify }}
+</article>

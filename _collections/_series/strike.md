@@ -1,0 +1,4 @@
+---
+title: Strike
+layout: series
+---

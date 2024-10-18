@@ -1,0 +1,11 @@
+{%- assign items = site.year | sort: "date" -%}
+
+{%- if items.size > 0 -%}
+<ul>
+    {%- for item in items -%}
+    <li>
+        <a href="{{ item.url | relative_url }}">{{ item.title | downcase }}</a>
+    </li>
+    {%- endfor -%}
+</ul>
+{%- endif -%}

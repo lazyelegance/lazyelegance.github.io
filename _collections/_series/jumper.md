@@ -1,0 +1,4 @@
+---
+title: Jumper
+layout: series
+---
