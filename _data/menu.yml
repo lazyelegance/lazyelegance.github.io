@@ -1,15 +1,9 @@
 entries:
   - title: me
-    entries:
-      - title: email
-        url: mailto:lazyelegance@ezrabathini.com
-      - title: github
-        url: https://github.com/lazyelegance
-      - title: linkedin
-        url: https://www.linkedin.com/in/ezrabathini/
+    url: /me
   - title: reading list
     url: /books
-  - title: now
-    url: /now
+  # - title: now
+  #   url: /now
   - title: notes
     post_list: true
