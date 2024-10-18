@@ -3,6 +3,7 @@ title: The Secret History
 author: Donna Tartt
 author_slug: donna_tartt
 is_audiobook: false
+author_info: https://en.wikipedia.org/wiki/Donna_Tartt
 series: 
 series_slug: 
 series_number: 

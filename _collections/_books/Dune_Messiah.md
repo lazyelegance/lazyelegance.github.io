@@ -1,8 +1,9 @@
 ---
 title: Dune Messiah
-author: Frank Herbett
-author_slug: frank_herbett
+author: Frank Herbert
+author_slug: frank_herbert
 is_audiobook: false
+author_info: https://en.wikipedia.org/wiki/Frank_Herbert
 series: Dune
 series_slug: dune
 series_number: 2

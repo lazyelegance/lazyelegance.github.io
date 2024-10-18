@@ -3,6 +3,7 @@ title: The Penelepoid
 author: Margaret Atwood
 author_slug: margaret_atwood
 is_audiobook: false
+author_info: https://en.wikipedia.org/wiki/Margaret_Atwood
 series: 
 series_slug: 
 series_number: 

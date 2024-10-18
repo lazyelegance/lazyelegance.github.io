@@ -1,8 +1,9 @@
 ---
 title: I'm Glad My Mom Died
-author: Jannette McCurdy
-author_slug: jannette_mccurdy
+author: Jennette McCurdy
+author_slug: jennette_mccurdy
 is_audiobook: false
+author_info: https://en.wikipedia.org/wiki/Jennette_McCurdy
 series: 
 series_slug: 
 series_number: 

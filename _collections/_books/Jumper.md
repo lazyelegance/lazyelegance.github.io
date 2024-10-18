@@ -3,6 +3,7 @@ title: Jumper
 author: Steven Gould
 author_slug: steven_gould
 is_audiobook: false
+author_info: https://en.wikipedia.org/wiki/Steven_Gould
 series: Jumper
 series_slug: jumper
 series_number: 1

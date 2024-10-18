@@ -3,6 +3,7 @@ title: The Eighth Detective
 author: Alex Pavesi
 author_slug: alex_pavesi
 is_audiobook: false
+author_info: 
 series: 
 series_slug: 
 series_number: 
