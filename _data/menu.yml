@@ -7,3 +7,6 @@ entries:
   #   url: /now
   - title: notes
     post_list: true
+    show_more: true
+    show_more_text: "More notes"
+    show_more_url: /more-notes

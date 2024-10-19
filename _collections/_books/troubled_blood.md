@@ -8,7 +8,7 @@ series: Strike
 series_slug: strike
 series_number: 5
 started: 
-year_finished: 2020
+year_finished: 2020 or earlier
 read_status: Read
 layout: book
 ---
