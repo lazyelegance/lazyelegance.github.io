@@ -25,8 +25,8 @@ Unlike Access Tokens, <mark>Refresh Tokens</mark> normally have long expiry time
 
 The idea of roles is part of the core specification of the O**Auth2.0** authorization framework.
 
-- **Resource Owner**: The user or system that owns ::the protected resources:: and can grant access to them.
-- **Client**: The client is the system that requires access to ::the protected resources::. To access resources, the Client must hold the appropriate Access Token.
+- **Resource Owner**: The user or system that owns <mark>the protected resources</mark> and can grant access to them.
+- **Client**: The client is the system that requires access to <mark>the protected resources</mark>. To access resources, the Client must hold the appropriate Access Token.
 - **Authorization Server**: This server receives requests from the Client for Access Tokens and issues them upon successful authentication and consent by the Resource Owner. The authorization server exposes two endpoints: the Authorization endpoint, which handles the interactive authentication and consent of the user, and the Token endpoint, which is involved in a machine to machine interaction.
 - **Resource Server**: A server that protects the user’s resources and receives access requests from the Client. It accepts and validates an Access Token from the Client and returns the appropriate resources to it.
 
@@ -40,7 +40,7 @@ The OAuth 2 Authorization server may not directly return an Access Token after t
 
 ### How Does OAuth 2.0 Work?
 
-At the most basic level, before OAuth 2.0 can be used, the Client must acquire its own credentials, ::a *client id* and *client secret*::, from the Authorization Server in order to identify and authenticate itself when requesting an Access Token.
+At the most basic level, before OAuth 2.0 can be used, the Client must acquire its own credentials, <mark>a *client id* and *client secret*</mark>, from the Authorization Server in order to identify and authenticate itself when requesting an Access Token.
 
 Using OAuth 2.0, access requests are initiated by the Client, e.g., a mobile app, website, smart TV app, desktop application, etc. The token request, exchange, and response follow this general flow:
 

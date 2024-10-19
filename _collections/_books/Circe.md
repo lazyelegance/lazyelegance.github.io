@@ -27,7 +27,6 @@ layout: book
 > *“Yet, as strange as it sounds, even in such extremities of misery I was not wholly miserable. I was used to unhappiness, formless and opaque, stretching out to every horizon.”*
 
 > *“I had asked Odysseus: “What did you do? When you could not make Achilles and Agamemnon listen?”*
-
 > *He’d smiled in the firelight. “That is easy. You make a plan in which they do not.”*
 
 > *“I thought: I cannot bear this world a moment longer. Then, child, make another.”*
