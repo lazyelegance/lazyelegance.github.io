@@ -12,3 +12,10 @@ year_finished: 2023
 read_status: Read
 layout: book
 ---
+
+
+#### Some highlights
+
+> *"It’s not like your department’s a jewel in the Service’s crown, after all. It’s more like a slug in its lettuce patch."*
+
+> *"Mind like a razor," Lamb agreed. "Disposable."*

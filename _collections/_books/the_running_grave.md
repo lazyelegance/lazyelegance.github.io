@@ -12,3 +12,6 @@ year_finished: 2023
 read_status: Read
 layout: book
 ---
+
+
+> Happiness is a choice that requires an effort at times, and it was well past time for him to make the effort.

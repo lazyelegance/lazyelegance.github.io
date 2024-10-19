@@ -9,6 +9,6 @@ series_slug: the_hitchhiker's_guide_to_the_galaxy
 series_number: 3
 started: March 19, 2024
 year_finished: Reading
-read_status: Reading
+read_status: want to read
 layout: book
 ---

@@ -9,6 +9,6 @@ series_slug:
 series_number: 
 started: May 1, 2024
 year_finished: Reading
-read_status: Reading
+read_status: want to read
 layout: book
 ---
