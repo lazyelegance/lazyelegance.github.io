@@ -6,20 +6,24 @@ layout: default
 <a href="{{ " /books" | relative_url }}">.</a>
 <article>
     <p class="post-meta">
-        <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
+        <!-- <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time> -->
+        <mark>{{ page.read_status }}</mark>
+        {% if page.read_status == "Read" %}
+        <span>- {{ page.year_finished }}</span>
+        {% endif %}
+        {% if page.is_audiobook %}
+        <span>- 🎧</span>
+        {% endif %}
     </p>
 
     <h1>{{ page.title }}</h1>
     <h3>{{ page.author }}<span> </span><a target="_blank" href="{{ page.author_info }}"><span>↗</span></a>
     </h3>
-    <mark>{{ page.read_status }}</mark>
-    {% if page.is_audiobook %}
-    <span>- 🎧</span>
-    {% endif %}
+
     {% if page.series != null %}
-    <h3><a href="{{ site.baseurl }}/books/series/{{ page.series_slug }}">{{ page.series }}</a> - {{
+    <h4><a href="{{ site.baseurl }}/books/series/{{ page.series_slug }}">{{ page.series }}</a> - {{
         page.series_number }}
-    </h3>
+    </h4>
     {% endif %}
     {{ content | markdownify }}
 </article>
