@@ -11,4 +11,5 @@ started:
 year_finished: 2024
 read_status: Read
 layout: book
+book_cover_file: the_hitchhiker_s_guide_to_the_galaxy.jpeg
 ---

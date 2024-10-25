@@ -11,4 +11,5 @@ started:
 year_finished: 2024
 read_status: Read
 layout: book
+book_cover_file: the_restaurant_at_the_end_of_the_universe.jpg
 ---

@@ -11,6 +11,7 @@ started: January 1, 2021
 year_finished: 2021
 read_status: Read
 layout: book
+book_cover_file: circe.jpeg
 ---
 
 

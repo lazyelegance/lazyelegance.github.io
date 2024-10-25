@@ -11,4 +11,5 @@ started: March 19, 2024
 year_finished: Reading
 read_status: want to read
 layout: book
+book_cover_file: life_the_universe_and_everything.jpeg
 ---

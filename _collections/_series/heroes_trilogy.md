@@ -1,4 +1,4 @@
 ---
-title: Heroes Trilogy
+title: Stephen Fry's Great Mythology
 layout: series
 ---

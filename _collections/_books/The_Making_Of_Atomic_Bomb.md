@@ -11,6 +11,7 @@ started: February 1, 2024
 year_finished: Reading
 read_status: Reading
 layout: book
+book_cover_file: the_making_of_atomic_bomb.jpeg
 ---
 
 #### Some highlights so far

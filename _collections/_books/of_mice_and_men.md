@@ -11,4 +11,5 @@ started: October 23, 2024
 year_finished: 
 read_status: Reading
 layout: book
+book_cover_file: of_mice_and_men.jpg
 ---

@@ -3,7 +3,7 @@ layout: default
 ---
 
 {%-include back_link.html-%}
-<a href="{{ "/books" | relative_url }}">.</a>
+<a href="{{ " /books" | relative_url }}">.</a>
 <article>
     <p class="post-meta">
         <!-- <time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time> -->
@@ -24,6 +24,12 @@ layout: default
     <h4><a href="{{ site.baseurl }}/books/series/{{ page.series_slug }}">{{ page.series }}</a> - {{
         page.series_number }}
     </h4>
+    {% endif %}
+
+    {% if page.book_cover_file != null %}
+    <img src="{{ site.baseurl }}/assets/bookcovers/{{ page.book_cover_file }}" alt="{{ page.title }}"
+        style="width: 200px; float: left; border: 1px solid; border-radius: 10px;">
+    <div style="clear: both;"></div>
     {% endif %}
     {{ content | markdownify }}
 </article>

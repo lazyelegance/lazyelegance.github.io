@@ -11,4 +11,5 @@ started: April 2, 2024
 year_finished: 2024
 read_status: Read
 layout: book
+book_cover_file: i_m_glad_my_mom_died.png
 ---

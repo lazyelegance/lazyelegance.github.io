@@ -11,4 +11,5 @@ started: March 13, 2024
 year_finished: Reading
 read_status: Reading
 layout: book
+book_cover_file: shogun.jpeg
 ---

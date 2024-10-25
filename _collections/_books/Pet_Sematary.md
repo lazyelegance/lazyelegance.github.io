@@ -11,6 +11,7 @@ started: March 1, 2024
 year_finished: 2024
 read_status: Read
 layout: book
+book_cover_file: pet_sematary.jpeg
 ---
 
 

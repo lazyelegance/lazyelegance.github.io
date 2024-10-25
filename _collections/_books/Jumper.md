@@ -11,4 +11,5 @@ started: December 27, 2023
 year_finished: 2024
 read_status: Read
 layout: book
+book_cover_file: jumper.png
 ---
