@@ -8,7 +8,7 @@ series:
 series_slug: 
 series_number: 
 started: October 23, 2024
-year_finished: 
+year_finished: 2024
 read_status: Read
 layout: book
 book_cover_file: of_mice_and_men.jpg
