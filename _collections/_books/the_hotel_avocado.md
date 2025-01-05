@@ -8,7 +8,7 @@ series: Gary Thorn
 series_slug: gary_thorn
 series_number: 2
 started: December 21, 2024
-year_finished: 
-read_status: Reading
+year_finished: 2025
+read_status: Read
 layout: book
 ---
