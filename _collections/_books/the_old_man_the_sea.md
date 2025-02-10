@@ -11,4 +11,5 @@ started: February 10, 2025
 year_finished: 2025
 read_status: Read
 layout: book
+book_cover_file: the_old_man_the_sea.jpg
 ---
