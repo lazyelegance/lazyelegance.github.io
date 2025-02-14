@@ -11,4 +11,5 @@ started: December 21, 2024
 year_finished: 2025
 read_status: Read
 layout: book
+book_cover_file: the_hotel_avocado.jpg
 ---
