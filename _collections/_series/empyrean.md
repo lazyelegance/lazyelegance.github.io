@@ -1,0 +1,4 @@
+---
+title: Empyrean
+layout: series
+---
