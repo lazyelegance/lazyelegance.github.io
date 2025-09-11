@@ -44,6 +44,9 @@ collections:
   series:
     output: true
     permalink: /books/series/:title
+  authors:
+    output: true
+    permalink: /books/author/:title
   notes:
     output: true
   year:

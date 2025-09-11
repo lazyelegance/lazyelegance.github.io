@@ -17,7 +17,7 @@ layout: default
     </p>
 
     <h1>{{ page.title }}</h1>
-    <h3>{{ page.author }}<span> </span><a target="_blank" href="{{ page.author_info }}"><span>↗</span></a>
+    <h3><a href="{{ site.baseurl }}/books/author/{{ page.author_slug }}">{{ page.author }}</a>
     </h3>
 
     {% if page.series != null %}
