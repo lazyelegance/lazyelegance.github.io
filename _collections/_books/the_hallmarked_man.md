@@ -11,4 +11,5 @@ started: September 3, 2025
 year_finished: 
 read_status: Reading
 layout: book
+book_cover_file: the_hallmarked_man.jpeg
 ---
