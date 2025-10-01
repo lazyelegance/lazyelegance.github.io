@@ -36,6 +36,7 @@ plugins:
 theme_config:
   appearance: "auto"
   date_format: "%b %d, %Y"
+  back_home_text: "home"
   
 
 collections:
