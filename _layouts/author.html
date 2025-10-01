@@ -2,30 +2,42 @@
 layout: default
 ---
 
-{%- include back_link.html -%}
-<h1>{{ page.title }}</h1>
-{%- if page.wikipedia_summary -%}
-<p><em>{{ page.wikipedia_summary | strip }}</em></p>
-{%- endif -%}
-{%- if page.wikipedia_url -%}
-<p><a target="_blank" href="{{ page.wikipedia_url }}">🔗</a></p>
-{%- endif -%}
+<div class="author-page">
+    <div class="back-link-wrapper">
+        {%- include back_link.html -%}
+    </div>
 
-{%- assign author_books = site.books | where: "author_slug", page.author_slug -%}
-{%- if author_books.size > 0 -%}
-{%- assign sorted_books = author_books | sort: "series_number" -%}
-<ul>
-    {%- for book in sorted_books -%}
-    <li>
-        <a href="{{ book.url | relative_url }}">{{ book.title | downcase }}</a>
-        {%- if book.series != null and book.series != "" -%}
-        <span> - <a href="{{ site.baseurl }}/books/series/{{ book.series_slug }}">{{ book.series }}</a> #{{ book.series_number }}</span>
+    <div class="author-header">
+        <h1>{{ page.title }}</h1>
+
+        {%- if page.wikipedia_summary -%}
+        <p class="author-bio">{{ page.wikipedia_summary | strip }}</p>
         {%- endif -%}
-        {%- if book.is_audiobook -%}
-        <span> - 🎧</span>
+
+        {%- if page.wikipedia_url -%}
+        <a class="author-link" target="_blank" href="{{ page.wikipedia_url }}" title="Wikipedia">🔗</a>
         {%- endif -%}
-        <span> - {{ book.read_status }}</span>
-    </li>
-    {%- endfor -%}
-</ul>
-{%- endif -%}
+    </div>
+
+    {%- assign author_books = site.books | where: "author_slug", page.author_slug -%}
+    {%- if author_books.size > 0 -%}
+    <div class="book-list">
+        <h2>Books</h2>
+        {%- assign sorted_books = author_books | sort: "series_number" -%}
+        <ul>
+            {%- for book in sorted_books -%}
+            <li>
+                <a href="{{ book.url | relative_url }}">{{ book.title | downcase }}</a>
+                {%- if book.series != null and book.series != "" -%}
+                <span> - <a href="{{ site.baseurl }}/books/series/{{ book.series_slug }}">{{ book.series }}</a> #{{ book.series_number }}</span>
+                {%- endif -%}
+                {%- if book.is_audiobook -%}
+                <span> - 🎧</span>
+                {%- endif -%}
+                <span> - {{ book.read_status }}</span>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </div>
+    {%- endif -%}
+</div>

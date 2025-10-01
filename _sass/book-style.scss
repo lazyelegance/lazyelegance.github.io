@@ -1,0 +1,275 @@
+// -------------- BOOK PAGE STYLING -------------- //
+
+.book-page {
+    // Back link wrapper
+    .back-link-wrapper {
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        gap: 0.5rem;
+
+        a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    // Header section with gradient background
+    .book-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 2rem;
+        margin: 0 -2rem 2rem -2rem;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+
+        // Book cover styling inside header
+        .book-cover {
+            flex-shrink: 0;
+            border-radius: 12px;
+            box-shadow:
+                0 4px 8px rgba(0, 0, 0, 0.2),
+                0 12px 24px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow:
+                    0 8px 16px rgba(0, 0, 0, 0.25),
+                    0 16px 32px rgba(0, 0, 0, 0.3);
+            }
+
+            img {
+                border-radius: 12px;
+                display: block;
+            }
+        }
+
+        .book-header-text {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .post-meta {
+            text-align: left;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+
+            mark {
+                background: rgba(255, 255, 255, 0.25);
+                color: white;
+                padding: 0.3rem 0.8rem;
+                border-radius: 20px;
+                font-weight: 600;
+            }
+
+            span {
+                margin-left: 0.5rem;
+            }
+        }
+
+        h1 {
+            color: white;
+            margin: 1rem 0 0.5rem 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            margin: 0.5rem 0;
+
+            a {
+                color: rgba(255, 255, 255, 0.95);
+                text-decoration: none;
+                border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                transition: border-color 0.3s ease;
+
+                &:hover {
+                    border-color: white;
+                }
+            }
+        }
+
+        h4 {
+            margin: 0.5rem 0 0 0;
+
+            a {
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: none;
+                font-size: 0.95rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                transition: border-color 0.3s ease;
+
+                &:hover {
+                    border-color: white;
+                }
+            }
+        }
+    }
+
+    // Content area
+    .book-content {
+        background: linear-gradient(to bottom,
+            rgba(102, 126, 234, 0.02) 0%,
+            rgba(255, 255, 255, 0) 100px);
+        padding: 2rem;
+        margin: 0 -2rem;
+
+        h4 {
+            color: #667eea;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        blockquote {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            font-style: italic;
+
+            p {
+                margin: 0.5rem 0;
+                color: #2d3748;
+                line-height: 1.7;
+
+                em {
+                    color: #4a5568;
+                }
+            }
+        }
+
+        p {
+            line-height: 1.7;
+            color: #2d3748;
+        }
+    }
+
+}
+
+// Responsive design
+@media (max-width: 640px) {
+    .book-page {
+        .back-link-wrapper {
+            margin-left: -1rem;
+        }
+
+        .book-header {
+            margin: 0 -1rem 2rem -1rem;
+            padding: 1.5rem 1rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+
+            .book-cover {
+                margin: 0 auto;
+            }
+
+            .book-header-text {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .book-content {
+            padding: 1rem;
+            margin: 0 -1rem;
+        }
+    }
+}
+
+// Dark mode adjustments
+body[a="dark"] .book-page {
+    .back-link-wrapper a {
+        color: #a78bfa;
+    }
+
+    .book-header {
+        background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+    }
+
+    .book-content {
+        background: linear-gradient(to bottom,
+            rgba(79, 70, 229, 0.05) 0%,
+            rgba(0, 0, 0, 0) 100px);
+
+        blockquote {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border-left-color: #a78bfa;
+
+            p {
+                color: #e2e8f0;
+
+                em {
+                    color: #cbd5e0;
+                }
+            }
+        }
+
+        p {
+            color: #e2e8f0;
+        }
+
+        h4 {
+            color: #a78bfa;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body[a="auto"] .book-page {
+        .back-link-wrapper a {
+            color: #a78bfa;
+        }
+
+        .book-header {
+            background: linear-gradient(135deg, #4c51bf 0%, #553c9a 100%);
+        }
+
+        .book-content {
+            background: linear-gradient(to bottom,
+                rgba(79, 70, 229, 0.05) 0%,
+                rgba(0, 0, 0, 0) 100px);
+
+            blockquote {
+                background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+                border-left-color: #a78bfa;
+
+                p {
+                    color: #e2e8f0;
+
+                    em {
+                        color: #cbd5e0;
+                    }
+                }
+            }
+
+            p {
+                color: #e2e8f0;
+            }
+
+            h4 {
+                color: #a78bfa;
+            }
+        }
+    }
+}

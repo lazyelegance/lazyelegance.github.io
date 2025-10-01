@@ -1,0 +1,443 @@
+// -------------- AUTHOR PAGE STYLING -------------- //
+
+.author-page {
+    // Back link wrapper
+    .back-link-wrapper {
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        gap: 0.5rem;
+
+        a {
+            display: inline-block;
+            color: #f5576c;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    // Header section with gradient background
+    .author-header {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        padding: 2.5rem;
+        margin: 0 -2rem 2rem -2rem;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(240, 147, 251, 0.3);
+
+        h1 {
+            color: white;
+            margin: 0 0 1rem 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .author-bio {
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+            line-height: 1.7;
+            margin: 1rem 0;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .author-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    // Book list section
+    .book-list {
+        padding: 1rem 0;
+
+        h2 {
+            color: #f5576c;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+
+            &::before {
+                content: "📚 ";
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                background: linear-gradient(135deg, rgba(240, 147, 251, 0.08) 0%, rgba(245, 87, 108, 0.08) 100%);
+                padding: 1rem 1.5rem;
+                margin: 0.8rem 0;
+                border-radius: 10px;
+                border-left: 4px solid #f5576c;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+                &:hover {
+                    transform: translateX(10px);
+                    box-shadow: 0 4px 12px rgba(245, 87, 108, 0.2);
+                    border-left-width: 6px;
+                }
+
+                a {
+                    color: #d63384;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #f5576c;
+                    }
+                }
+
+                span {
+                    color: #6c757d;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+// -------------- SERIES PAGE STYLING -------------- //
+
+.series-page {
+    // Back link wrapper
+    .back-link-wrapper {
+        margin-bottom: 1rem;
+        margin-left: -2rem;
+        position: relative;
+        z-index: 10;
+        display: flex;
+        gap: 0.5rem;
+
+        a {
+            display: inline-block;
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    // Header section with gradient background
+    .series-header {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        padding: 2.5rem;
+        margin: 0 -2rem 2rem -2rem;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+            &::before {
+                content: "📖 ";
+            }
+        }
+    }
+
+    // Book list section
+    .book-list {
+        padding: 1rem 0;
+
+        h2 {
+            color: #0d6efd;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+
+            &::before {
+                content: "📚 ";
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            counter-reset: book-counter;
+
+            li {
+                background: linear-gradient(135deg, rgba(79, 172, 254, 0.08) 0%, rgba(0, 242, 254, 0.08) 100%);
+                padding: 1rem 1.5rem 1rem 3.5rem;
+                margin: 0.8rem 0;
+                border-radius: 10px;
+                border-left: 4px solid #4facfe;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+                position: relative;
+                counter-increment: book-counter;
+
+                &::before {
+                    content: counter(book-counter);
+                    position: absolute;
+                    left: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                    color: white;
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                    font-size: 0.9rem;
+                    box-shadow: 0 2px 6px rgba(79, 172, 254, 0.3);
+                }
+
+                &:hover {
+                    transform: translateX(10px);
+                    box-shadow: 0 4px 12px rgba(79, 172, 254, 0.2);
+                    border-left-width: 6px;
+
+                    &::before {
+                        transform: translateY(-50%) scale(1.1);
+                    }
+                }
+
+                a {
+                    color: #0d6efd;
+                    text-decoration: none;
+                    font-weight: 600;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: #4facfe;
+                    }
+                }
+
+                span {
+                    color: #6c757d;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+// -------------- RESPONSIVE DESIGN -------------- //
+
+@media (max-width: 640px) {
+    .author-page,
+    .series-page {
+        .back-link-wrapper {
+            margin-left: -1rem;
+        }
+
+        .author-header,
+        .series-header {
+            margin: 0 -1rem 2rem -1rem;
+            padding: 1.5rem 1rem;
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .book-list ul li {
+            padding: 0.8rem 1rem;
+        }
+    }
+
+    .series-page .book-list ul li {
+        padding-left: 3rem;
+
+        &::before {
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 0.8rem;
+            left: 0.75rem;
+        }
+    }
+}
+
+// -------------- DARK MODE -------------- //
+
+body[a="dark"] {
+    .author-page {
+        .back-link-wrapper a {
+            color: #ff6b9d;
+        }
+
+        .author-header {
+            background: linear-gradient(135deg, #c471ed 0%, #f64f59 100%);
+        }
+
+        .book-list {
+            h2 {
+                color: #ff6b9d;
+            }
+
+            ul li {
+                background: linear-gradient(135deg, rgba(196, 113, 237, 0.15) 0%, rgba(246, 79, 89, 0.15) 100%);
+                border-left-color: #ff6b9d;
+
+                &:hover {
+                    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+                }
+
+                a {
+                    color: #ff6b9d;
+
+                    &:hover {
+                        color: #ffa8c5;
+                    }
+                }
+
+                span {
+                    color: #adb5bd;
+                }
+            }
+        }
+    }
+
+    .series-page {
+        .back-link-wrapper a {
+            color: #5eb3ff;
+        }
+
+        .series-header {
+            background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+        }
+
+        .book-list {
+            h2 {
+                color: #5eb3ff;
+            }
+
+            ul li {
+                background: linear-gradient(135deg, rgba(58, 123, 213, 0.15) 0%, rgba(0, 210, 255, 0.15) 100%);
+                border-left-color: #5eb3ff;
+
+                &::before {
+                    background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+                }
+
+                &:hover {
+                    box-shadow: 0 4px 12px rgba(94, 179, 255, 0.3);
+                }
+
+                a {
+                    color: #5eb3ff;
+
+                    &:hover {
+                        color: #8fcdff;
+                    }
+                }
+
+                span {
+                    color: #adb5bd;
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body[a="auto"] {
+        .author-page {
+            .back-link-wrapper a {
+                color: #ff6b9d;
+            }
+
+            .author-header {
+                background: linear-gradient(135deg, #c471ed 0%, #f64f59 100%);
+            }
+
+            .book-list {
+                h2 {
+                    color: #ff6b9d;
+                }
+
+                ul li {
+                    background: linear-gradient(135deg, rgba(196, 113, 237, 0.15) 0%, rgba(246, 79, 89, 0.15) 100%);
+                    border-left-color: #ff6b9d;
+
+                    &:hover {
+                        box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+                    }
+
+                    a {
+                        color: #ff6b9d;
+
+                        &:hover {
+                            color: #ffa8c5;
+                        }
+                    }
+
+                    span {
+                        color: #adb5bd;
+                    }
+                }
+            }
+        }
+
+        .series-page {
+            .back-link-wrapper a {
+                color: #5eb3ff;
+            }
+
+            .series-header {
+                background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+            }
+
+            .book-list {
+                h2 {
+                    color: #5eb3ff;
+                }
+
+                ul li {
+                    background: linear-gradient(135deg, rgba(58, 123, 213, 0.15) 0%, rgba(0, 210, 255, 0.15) 100%);
+                    border-left-color: #5eb3ff;
+
+                    &::before {
+                        background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 12px rgba(94, 179, 255, 0.3);
+                    }
+
+                    a {
+                        color: #5eb3ff;
+
+                        &:hover {
+                            color: #8fcdff;
+                        }
+                    }
+
+                    span {
+                        color: #adb5bd;
+                    }
+                }
+            }
+        }
+    }
+}
