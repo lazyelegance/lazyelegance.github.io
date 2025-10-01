@@ -2,7 +2,12 @@
 layout: default
 ---
 
-{%-include back_link.html-%}
+<div class="reading-list-page">
+    <div class="back-link-wrapper">
+        {%-include back_link.html-%}
+        <a href="{{ site.baseurl }}/books">reading list</a>
+    </div>
 
-<h1>{{ page.title }}</h1>
-{%- include book_list.html year_finished=page.title show_reading=page.show_reading -%}
+    <h1>{{ page.title }}</h1>
+    {%- include book_list.html year_finished=page.title show_reading=page.show_reading -%}
+</div>

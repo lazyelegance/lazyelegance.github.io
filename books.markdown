@@ -3,6 +3,12 @@ title: Books
 layout: default
 ---
 
-{%-include back_link.html-%}
+<div class="reading-list-page">
+    <div class="back-link-wrapper">
+        {%-include back_link.html-%}
+    </div>
 
-{%- include book_list.html   -%}
+    <h1>{{ page.title }}</h1>
+
+    {%- include book_list.html -%}
+</div>

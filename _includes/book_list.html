@@ -39,8 +39,22 @@
         <ul>
             {%- for post in group.items limit: include.limit -%}
             <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-                <span>- {{post.author | downcase}}</span>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                </a>
             </li>
             {%- endfor -%}
         </ul>
@@ -68,8 +82,22 @@
         <ul>
             {%- for post in year_group.items limit: include.limit -%}
             <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-                <span>- {{post.author | downcase}}</span>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                </a>
             </li>
             {%- endfor -%}
         </ul>
@@ -87,8 +115,22 @@
         <ul>
             {%- for post in group.items limit: include.limit -%}
             <li>
-                <a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-                <span>- {{post.author | downcase}}</span>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                </a>
             </li>
             {%- endfor -%}
         </ul>
