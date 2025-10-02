@@ -11,4 +11,5 @@ started: January 31, 2024
 year_finished: Reading
 read_status: want to read
 layout: book
+book_cover_file: drive.jpg
 ---

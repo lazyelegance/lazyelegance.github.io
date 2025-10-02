@@ -11,4 +11,5 @@ started:
 year_finished: 2021
 read_status: Read
 layout: book
+book_cover_file: mexican_gothic.jpg
 ---

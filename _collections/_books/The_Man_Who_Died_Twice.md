@@ -11,4 +11,5 @@ started: January 1, 2022
 year_finished: 2022
 read_status: Read
 layout: book
+book_cover_file: the_man_who_died_twice.jpg
 ---

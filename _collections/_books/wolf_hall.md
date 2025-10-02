@@ -11,4 +11,5 @@ started: November 10, 2024
 year_finished: 
 read_status: Reading
 layout: book
+book_cover_file: wolf_hall.jpg
 ---

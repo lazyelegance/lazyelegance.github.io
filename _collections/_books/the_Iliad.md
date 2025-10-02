@@ -9,6 +9,7 @@ series_slug:
 series_number: 
 started: November 10, 2024
 year_finished: 
-read_status: Reading
+read_status: want to read
 layout: book
+book_cover_file: the_Iliad.jpg
 ---

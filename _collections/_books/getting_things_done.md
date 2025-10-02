@@ -11,4 +11,5 @@ started:
 year_finished: 2023
 read_status: Read
 layout: book
+book_cover_file: getting_things_done.jpg
 ---

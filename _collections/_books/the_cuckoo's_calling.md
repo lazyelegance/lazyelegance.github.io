@@ -11,4 +11,5 @@ started:
 year_finished: 2020 or earlier
 read_status: Read
 layout: book
+book_cover_file: the_cuckoos_calling.jpg
 ---

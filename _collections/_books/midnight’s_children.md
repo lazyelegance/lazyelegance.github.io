@@ -11,4 +11,5 @@ started: May 1, 2024
 year_finished: Reading
 read_status: want to read
 layout: book
+book_cover_file: midnights_children.jpg
 ---

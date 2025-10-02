@@ -11,6 +11,7 @@ started: January 1, 2022
 year_finished: 2022
 read_status: Read
 layout: book
+book_cover_file: all_systems_red.jpg
 ---
 
 

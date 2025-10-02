@@ -11,4 +11,5 @@ started:
 year_finished: 2022
 read_status: Read
 layout: book
+book_cover_file: how_to_build_a_car.jpg
 ---

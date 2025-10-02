@@ -11,6 +11,7 @@ started: January 2, 2025
 year_finished: 2025
 read_status: Read
 layout: book
+book_cover_file: a_grief_observed.jpg
 ---
 
 > Them as asks don’t get

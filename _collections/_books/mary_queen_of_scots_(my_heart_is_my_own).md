@@ -11,6 +11,7 @@ started: January 1, 2022
 year_finished: 2022
 read_status: Read
 layout: book
+book_cover_file: mary_queen_of_scots_my_heart_is_my_own.jpg
 ---
 
 

@@ -11,4 +11,5 @@ started:
 year_finished: 2022
 read_status: Read
 layout: book
+book_cover_file: a_study_in_scarlet.jpg
 ---

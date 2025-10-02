@@ -11,6 +11,7 @@ started:
 year_finished: 2023
 read_status: Read
 layout: book
+book_cover_file: the_importance_of_being_earnest.jpg
 ---
 
 #### Some highlights
