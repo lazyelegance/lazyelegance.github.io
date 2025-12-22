@@ -2,6 +2,7 @@
 title: My Brilliant Friend
 author: Elena Ferrante
 bookety_rank: 89
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/MyBrilliantFriend.jpg?v=1596953842&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

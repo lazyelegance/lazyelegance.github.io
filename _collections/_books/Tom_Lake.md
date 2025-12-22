@@ -2,6 +2,7 @@
 title: Tom Lake
 author: Ann Patchett
 bookety_rank: 81
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781526676733.jpg?v=1715732612&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

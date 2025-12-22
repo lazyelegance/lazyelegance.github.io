@@ -2,6 +2,7 @@
 title: The Great Alone
 author: Kristin Hannah
 bookety_rank: 23
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781760558574.jpg?v=1719282777&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

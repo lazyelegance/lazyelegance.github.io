@@ -2,6 +2,7 @@
 title: The Wedding People
 author: Alison Espach
 bookety_rank: 38
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781399622745.jpg?v=1733197367&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

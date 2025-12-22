@@ -2,6 +2,7 @@
 title: Daisy Jones and The Six
 author: Taylor Jenkins Reid
 bookety_rank: 22
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781787462144_1.jpg?v=1724629625&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

@@ -2,6 +2,7 @@
 title: Little Women
 author: Louisa May Alcott
 bookety_rank: 29
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/d41536ac-8d0f-4203-a530-5c613803dd63.jpg?v=1597044648&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

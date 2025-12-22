@@ -2,6 +2,7 @@
 title: In Memoriam
 author: Alice Winn
 bookety_rank: 71
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9780241567838_1.jpg?v=1721771733&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book
