@@ -2,6 +2,7 @@
 title: Boy Swallows Universe
 author: Trent Dalton
 bookety_rank: 24
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/BoySwallowsUniverse.jpg?v=1596780233&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

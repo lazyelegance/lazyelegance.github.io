@@ -2,6 +2,7 @@
 title: I Who Have Never Known Men
 author: Jacqueline Harpman
 bookety_rank: 21
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781473570801.jpg?v=1684998629&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

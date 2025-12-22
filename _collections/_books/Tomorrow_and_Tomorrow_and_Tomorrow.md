@@ -2,6 +2,7 @@
 title: Tomorrow, and Tomorrow, and Tomorrow
 author: Gabrielle Zevin
 bookety_rank: 1
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781529115543.jpg?v=1688082470&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

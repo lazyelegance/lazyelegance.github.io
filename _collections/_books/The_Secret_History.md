@@ -13,4 +13,5 @@ read_status: Read
 layout: book
 book_cover_file: the_secret_history.jpg
 bookety_rank: 14
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/9780140167771.jpg?v=1674503199&width=480
 ---

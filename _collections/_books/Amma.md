@@ -2,6 +2,7 @@
 title: Amma
 author: Saraid de Silva
 bookety_rank: 53
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781869715403.jpg?v=1711058681&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

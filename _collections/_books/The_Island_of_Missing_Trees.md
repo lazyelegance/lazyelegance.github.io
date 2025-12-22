@@ -2,6 +2,7 @@
 title: The Island of Missing Trees
 author: Elif Shafak
 bookety_rank: 92
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9780241988725.jpg?v=1656904102&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book
