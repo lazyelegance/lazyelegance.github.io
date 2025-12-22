@@ -9,6 +9,12 @@
             filter: invert(0);
         }
     }
+
+    // Don't invert book cover images
+    .book-cover-wrapper img,
+    .book-cover img {
+        filter: invert(0);
+    }
 }
 
 body[a="dark"] {
