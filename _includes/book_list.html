@@ -41,7 +41,9 @@
             <li>
                 <a href="{{ post.url | relative_url }}" class="book-card">
                     <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
-                        {%- if post.book_cover_file -%}
+                        {%- if post.book_cover_url -%}
+                        <img src="{{ post.book_cover_url }}" alt="{{ post.title }}" loading="lazy">
+                        {%- elsif post.book_cover_file -%}
                         <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
                         {%- else -%}
                         <div class="no-cover">
@@ -84,7 +86,9 @@
             <li>
                 <a href="{{ post.url | relative_url }}" class="book-card">
                     <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
-                        {%- if post.book_cover_file -%}
+                        {%- if post.book_cover_url -%}
+                        <img src="{{ post.book_cover_url }}" alt="{{ post.title }}" loading="lazy">
+                        {%- elsif post.book_cover_file -%}
                         <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
                         {%- else -%}
                         <div class="no-cover">
@@ -117,7 +121,9 @@
             <li>
                 <a href="{{ post.url | relative_url }}" class="book-card">
                     <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
-                        {%- if post.book_cover_file -%}
+                        {%- if post.book_cover_url -%}
+                        <img src="{{ post.book_cover_url }}" alt="{{ post.title }}" loading="lazy">
+                        {%- elsif post.book_cover_file -%}
                         <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
                         {%- else -%}
                         <div class="no-cover">
