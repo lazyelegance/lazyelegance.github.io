@@ -2,6 +2,7 @@
 title: Lola in the Mirror
 author: Trent Dalton
 bookety_rank: 42
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/y648_24.jpg?v=1758498091&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

@@ -2,6 +2,7 @@
 title: Before the Coffee Gets Cold
 author: Toshikazu Kawaguchi
 bookety_rank: 80
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/BeforetheCoffeeGetsCold.jpg?v=1596939058&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

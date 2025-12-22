@@ -2,6 +2,7 @@
 title: The Hunger Games
 author: Suzanne Collins
 bookety_rank: 11
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9781760265304.jpg?v=1761281509&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

@@ -13,6 +13,7 @@ read_status: Read
 layout: book
 book_cover_file: circe.jpeg
 bookety_rank: 49
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/9781408890042.jpg?v=1628500443&width=480
 ---
 
 

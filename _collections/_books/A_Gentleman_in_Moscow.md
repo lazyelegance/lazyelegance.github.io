@@ -2,6 +2,7 @@
 title: A Gentleman in Moscow
 author: Amor Towles
 bookety_rank: 60
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/files/9780099558781.jpg?v=1712279094&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

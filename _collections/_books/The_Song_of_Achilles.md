@@ -2,6 +2,7 @@
 title: The Song of Achilles
 author: Madeline Miller
 bookety_rank: 9
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/9781408891384.jpg?v=1643776507&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book

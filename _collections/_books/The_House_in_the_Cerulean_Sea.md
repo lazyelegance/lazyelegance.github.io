@@ -2,6 +2,7 @@
 title: The House in the Cerulean Sea
 author: TJ Klune
 bookety_rank: 54
+book_cover_url: https://www.booketybookbooks.co.nz/cdn/shop/products/9781529087949.jpg?v=1660353753&width=480
 is_audiobook: false
 read_status: Not Started
 layout: book
