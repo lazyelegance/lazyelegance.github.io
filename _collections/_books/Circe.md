@@ -12,6 +12,7 @@ year_finished: 2021
 read_status: Read
 layout: book
 book_cover_file: circe.jpeg
+bookety_rank: 49
 ---
 
 
