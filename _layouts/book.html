@@ -28,7 +28,11 @@ layout: default
             {% endif %}
         </div>
 
-        {% if page.book_cover_file != null %}
+        {% if page.book_cover_url != null %}
+        <div class="book-cover">
+            <img src="{{ page.book_cover_url }}" alt="{{ page.title }}" style="width: 200px;">
+        </div>
+        {% elsif page.book_cover_file != null %}
         <div class="book-cover">
             <img src="{{ site.baseurl }}/assets/bookcovers/{{ page.book_cover_file }}" alt="{{ page.title }}" style="width: 200px;">
         </div>
