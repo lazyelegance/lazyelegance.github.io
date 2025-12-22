@@ -12,4 +12,5 @@ year_finished: 2022
 read_status: Read
 layout: book
 book_cover_file: the_secret_history.jpg
+bookety_rank: 14
 ---

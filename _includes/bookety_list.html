@@ -1,0 +1,130 @@
+{%- assign bookety_books = site.books | where_exp: "book", "book.bookety_rank" | sort: "bookety_rank" -%}
+
+{%- if bookety_books.size > 0 -%}
+<ul>
+    {%- assign grouped_posts = bookety_books | group_by: "read_status" -%}
+    {%- assign sorted_groups = grouped_posts | sort: "name" -%}
+    {%- assign reading_group = sorted_groups | where: "name", "Reading" -%}
+    {%- assign read_group = sorted_groups | where: "name", "Read" -%}
+    {%- assign not_started_group = sorted_groups | where: "name", "Not Started" -%}
+
+    {%- if reading_group.size > 0 -%}
+    <li>
+        <h3>Reading ({{ reading_group[0].items.size }})</h3>
+        <ul>
+            {%- for post in reading_group[0].items -%}
+            <li>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-rank">#{{ post.bookety_rank }}</div>
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                    <div class="book-status">📖</div>
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </li>
+    {%- endif -%}
+
+    {%- if read_group.size > 0 -%}
+    <li>
+        <h3>Read ({{ read_group[0].items.size }})</h3>
+        <ul>
+            {%- for post in read_group[0].items -%}
+            <li>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-rank">#{{ post.bookety_rank }}</div>
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                    <div class="book-status">✓</div>
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </li>
+    {%- endif -%}
+
+    {%- if not_started_group.size > 0 -%}
+    <li>
+        <h3>Not Started ({{ not_started_group[0].items.size }})</h3>
+        <ul>
+            {%- for post in not_started_group[0].items -%}
+            <li>
+                <a href="{{ post.url | relative_url }}" class="book-card">
+                    <div class="book-rank">#{{ post.bookety_rank }}</div>
+                    <div class="book-cover-wrapper{% if post.is_audiobook %} audiobook{% endif %}">
+                        {%- if post.book_cover_file -%}
+                        <img src="{{ site.baseurl }}/assets/bookcovers/{{ post.book_cover_file }}" alt="{{ post.title }}" loading="lazy">
+                        {%- else -%}
+                        <div class="no-cover">
+                            <div class="book-icon">{% if post.is_audiobook %}🎧{% else %}📖{% endif %}</div>
+                            <div class="book-title-placeholder">{{ post.title }}</div>
+                        </div>
+                        {%- endif -%}
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">{{ post.title | downcase }}</div>
+                        <div class="book-author">{{ post.author | downcase }}</div>
+                    </div>
+                    <div class="book-status">☐</div>
+                </a>
+            </li>
+            {%- endfor -%}
+        </ul>
+    </li>
+    {%- endif -%}
+</ul>
+{%- else -%}
+<p>No books found in the Bookety Top 100 collection yet.</p>
+{%- endif -%}
+
+<style>
+.book-card {
+    position: relative;
+}
+
+.book-rank {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.book-status {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+</style>
