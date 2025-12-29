@@ -8,8 +8,8 @@ series: Stephen Fry's Great Mythology
 series_slug: heroes_trilogy
 series_number: 2
 started: 
-year_finished: Reading
-read_status: Reading
+year_finished: 2025
+read_status: Read
 layout: book
 book_cover_file: heroes.jpg
 ---
