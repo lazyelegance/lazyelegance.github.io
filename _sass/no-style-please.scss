@@ -10,10 +10,12 @@
         }
     }
 
-    // Don't invert book cover images
+    // Don't invert book cover images or the reading list page
+    .book-cover-wrapper,
     .book-cover-wrapper img,
-    .book-cover img {
-        filter: invert(0);
+    .book-cover img,
+    .reading-list-page .book-card img {
+        filter: invert(0) !important;
     }
 }
 
