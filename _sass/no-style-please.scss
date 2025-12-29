@@ -10,12 +10,12 @@
         }
     }
 
-    // Don't invert book cover images or the reading list page
+    // Don't invert book cover images - apply counter-inversion to restore original colors
     .book-cover-wrapper,
     .book-cover-wrapper img,
     .book-cover img,
     .reading-list-page .book-card img {
-        filter: invert(0) !important;
+        filter: invert(1) !important;
     }
 }
 
