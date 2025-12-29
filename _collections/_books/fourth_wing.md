@@ -10,8 +10,8 @@ series: Empyrean
 series_slug: empyrean
 series_number: 1
 started: February 13, 2025
-year_finished: 2025
-read_status: Reading
+year_finished: -
+read_status: Not Started
 layout: book
 book_cover_file: fourth_wing.png
 ---
