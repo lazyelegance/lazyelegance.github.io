@@ -15,6 +15,15 @@
     .book-cover img {
         filter: invert(0);
     }
+
+    // Don't invert the reading list page (it has its own dark styling)
+    .reading-list-page {
+        filter: invert(0);
+
+        img {
+            filter: invert(0);
+        }
+    }
 }
 
 body[a="dark"] {
