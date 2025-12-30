@@ -1,39 +1,28 @@
-// -------------- THEME SWITCHER -------------- //
-@mixin dark-appearance {
-    filter: invert(1);
+// -------------- THEME SWITCHER DISABLED -------------- //
+// Dark mode has been disabled for the entire site
 
-    img {
-        filter: invert(1);
-
-        &.ioda {
-            filter: invert(0);
-        }
-    }
-
-    // Don't invert book cover images - they should remain normal
-    .reading-list-page {
-        .book-card {
-            .book-cover-wrapper {
-                filter: invert(1);
-
-                img {
-                    filter: none;
-                }
-            }
-        }
-    }
-}
-
-body[a="dark"] {
-    @include dark-appearance;
-}
-
-
-@media (prefers-color-scheme: dark) {
-    body[a="auto"] {
-        @include dark-appearance;
-    }
-}
+// @mixin dark-appearance {
+//     filter: invert(1);
+//
+//     img {
+//         filter: invert(1);
+//
+//         &.ioda {
+//             filter: invert(0);
+//         }
+//     }
+// }
+//
+// body[a="dark"] {
+//     @include dark-appearance;
+// }
+//
+//
+// @media (prefers-color-scheme: dark) {
+//     body[a="auto"] {
+//         @include dark-appearance;
+//     }
+// }
 
 // -------------------------------------------- //
 
