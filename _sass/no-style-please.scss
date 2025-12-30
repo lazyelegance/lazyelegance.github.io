@@ -2,8 +2,7 @@
 @mixin dark-appearance {
     filter: invert(1);
 
-    // Invert all images except book covers
-    img:not(.book-card img) {
+    img {
         filter: invert(1);
 
         &.ioda {
@@ -11,9 +10,17 @@
         }
     }
 
-    // Book covers: counter-invert the wrapper to restore original colors
-    .book-card .book-cover-wrapper {
-        filter: invert(1);
+    // Don't invert book cover images - they should remain normal
+    .reading-list-page {
+        .book-card {
+            .book-cover-wrapper {
+                filter: invert(1);
+
+                img {
+                    filter: none;
+                }
+            }
+        }
     }
 }
 
